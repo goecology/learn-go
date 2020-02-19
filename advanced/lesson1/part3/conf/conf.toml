@@ -1,0 +1,19 @@
+[muses]
+    [muses.server.stat]
+        addr = ":18080"
+        writeTimeout = "1s"
+        readTimeout = "1s"
+    [muses.server.gin]
+        graceful = true
+        mode = "debug"
+        addr = ":8080"
+        writeTimeout = "10s"
+        readTimeout = "10s"
+        maxHeaderBytes = 100000000000000
+        enabledRecovery = true
+        enabledLogger = true
+        enabledMetric = true
+    [muses.logger.system]
+        debug = true
+        level = "debug"
+        path = "./system.log"
