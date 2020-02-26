@@ -32,7 +32,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = UpdateeUser(db)
+	err = UpdateUser(db)
 	if err != nil {
 		panic(err)
 	}
@@ -71,7 +71,7 @@ func CreateUser(db *gorm.DB) (err error) {
 	}).Error
 }
 
-func UpdateeUser(db *gorm.DB) (err error) {
+func UpdateUser(db *gorm.DB) (err error) {
 	return db.Model(User{}).Where("uid = ?", 1).Updates(map[string]interface{}{
 		"name": "musesgo",
 	}).Error

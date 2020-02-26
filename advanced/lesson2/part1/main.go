@@ -7,8 +7,8 @@ import (
 )
 
 type User struct {
-	MemberId int
-	Name     string
+	Uid  int
+	Name string
 }
 
 func main() {
@@ -22,6 +22,6 @@ func main() {
 	}
 	u := User{}
 	if mysql.Caller("muses") != nil {
-		mysql.Caller("muses").Table("member").Where("member_id=?", 1).Find(&u)
+		mysql.Caller("muses").Where("uid=?", 1).Find(&u)
 	}
 }
