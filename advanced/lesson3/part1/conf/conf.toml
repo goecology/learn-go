@@ -1,0 +1,13 @@
+[muses.redis.muses]
+    debug = true
+    addr = "127.0.0.1:6379"
+    network = "tcp"
+    db = 0
+    password = ""
+    connectTimeout = "1s"
+    readTimeout = "1s"
+    writeTimeout = "1s"
+    maxIdle = 5
+    maxActive = 20
+    idleTimeout = "60s"
+    wait = false

@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/goecology/muses"
-	"github.com/goecology/muses/pkg/cmd"
-	musesgin "github.com/goecology/muses/pkg/server/gin"
+	"github.com/i2eco/muses"
+	"github.com/i2eco/muses/pkg/cmd"
+	musesgin "github.com/i2eco/muses/pkg/server/gin"
 	"net/http"
 )
 
